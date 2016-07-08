@@ -2,7 +2,6 @@
   "manifest_version": 2,
 
   "name": "GOT Spoiler Blocker",
-  "default_locale": "en",
   "description": "This extension indescriminately blocks all mentions of Game of Thrones characters and plotlines in an attempt to not have my life ruined.",
   "version": "0.1",
   "author": "Jared Sulzdorf",
@@ -13,8 +12,13 @@
       "38" : "images/stark38.png",
       "48" : "images/stark48.png",
       "128" : "images/stark128.png"
+    }
   },
   "permissions": [
     "activeTab"
-   ]
+   ],
+  "background": {
+    "scripts": ["js/startup.js"],
+    "persistent": false
+  }
 }
