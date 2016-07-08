@@ -1,4 +1,4 @@
-var dictionary = [ 'tyrion', 'jamie', 'cersei', 'daenerys', 'jon', 'snow', 'lannister', 'baelish', 'petyr', 'arya', 'stark', 'sansa', 'greyjoy' ];
+var dictionary = [ 'tyrion', 'jamie', 'cersei', 'daenerys', 'jon', 'snow', 'lannister', 'baelish', 'petyr', 'arya', 'stark', 'sansa', 'greyjoy', 'game of thrones', 'baratheon', 'frey', 'martell', 'tully', 'tyrel', 'westeros', 'night\'s watch', 'bolton', 'clegane', 'targaryen', 'varys' ];
 
 function replace() {
 	tags = document.getElementsByTagName('*');
