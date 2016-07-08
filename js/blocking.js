@@ -1,3 +1,5 @@
+var dictionary = [ 'tyrion', 'jamie', 'cersei', 'daenerys', 'jon', 'snow', 'lannister', 'baelish', 'petyr', 'arya', 'stark', 'sansa', 'greyjoy' ];
+
 function replace() {
 	tags = document.getElementsByTagName('*');
 
@@ -9,11 +11,14 @@ function replace() {
 
 			if ( node.nodeType === 3 ) {
 				var text = node.nodeValue;
-				var newText = text.replace( /Monitor/gi, 'stuff' );
-
-				if ( newText !== text ) {
-					element.replaceChild( document.createTextNode(newText), node );
-				}
+				text = text.toLowerCase();
+				dictionary.forEach( function( dictionaryItem ) {
+					var newText = text.includes( dictionaryItem );
+					if ( newText ) {
+						element.style.backgroundColor = 'black';
+						element.style.color = 'black';
+					}
+				});
 			}
 		}
 	}
